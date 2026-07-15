@@ -1,0 +1,73 @@
+{
+ "n_files_scanned": 146660,
+ "phase_hist": {
+  "A": 57000,
+  "B": 7500,
+  "E0": 2000,
+  "G": 78960,
+  "L": 1200
+ },
+ "status_hist": {
+  "ok": 143143,
+  "fail": 3517
+ },
+ "machine_hist": {
+  "m2": 65715,
+  "m1": 79745,
+  "lock": 1200
+ },
+ "bin_md5_per_sota": {
+  "address": [
+   "d052bead8f0e49d220cb248fc6c43862"
+  ],
+  "balance": [
+   "f713bbbcfad7df7f7ca319e6eb4f3af7"
+  ],
+  "lns2": [
+   "8c57ff8bfee0c7993efb3803faad7256"
+  ],
+  "tackle": [
+   "5bdfadc0b6f0c34a87acb5245999a876"
+  ],
+  "tackle_alns": [
+   "5bdfadc0b6f0c34a87acb5245999a876"
+  ]
+ },
+ "fail_examples": {
+  "A.csv_bad_vals": [
+   "A.address.brc202d.N700.s8.r0.cart_v5",
+   "A.address.brc202d.N700.s8.r0.full",
+   "A.address.brc202d.N700.s8.r0.spsa_20",
+   "A.address.brc202d.N700.s8.r0.spsa_only"
+  ],
+  "E0.csv_bad_vals": [
+   "E0.address.maze-32-32-4.N158.s20.r1.stock",
+   "E0.address.ost003d.N700.s10.r1.stock",
+   "E0.address.ost003d.N700.s22.r2.stock",
+   "E0.address.room-32-32-4.N210.s20.r2.stock"
+  ],
+  "G.csv_bad_vals": [
+   "G.address.gmaze-128-s11.N62.s2.r0.full",
+   "G.address.gmaze-128-s11.N62.s2.r0.rr5_v5",
+   "G.address.gmaze-128-s11.N62.s2.r0.spsa_20",
+   "G.address.gmaze-128-s11.N62.s2.r0.spsa_only"
+  ],
+  "L.csv_bad_vals": [
+   "L.tackle.ost003d.N700.s22.r2.full",
+   "L.tackle.ost003d.N700.s22.r2.stock"
+  ]
+ },
+ "m2_identity_sample": {
+  "sampled": 300,
+  "identical_metrics": 300,
+  "diff": [],
+  "missing_in_m1": 0
+ },
+ "nominal": {
+  "L": 1200,
+  "E0": 2000,
+  "A": 57000,
+  "B": 7500,
+  "G": "~79680 (nprobe collapsed)"
+ }
+}
