@@ -1,0 +1,5 @@
+This directory vendors the TACKLE solver (AAAI 2026) source code for
+reproducibility. The upstream repository did not ship a license file at the
+time of vendoring; all rights remain with the original authors. Our additions
+are the environment-gated layer blocks only (marked AMOR_*/SATA_PORT/
+BESTRET_PORT/CART_PORT/TRAJ_PORT/REPV5_PORT/ANCHORFIX_PORT comments).

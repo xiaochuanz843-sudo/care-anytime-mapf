@@ -1,0 +1,745 @@
+{
+ "note": "scheduled = n_scen x reps (official 25 / gen 8; L reps 0-2, others rep 0); recon enumerates cells with >=1 record — a cell that never produced ANY record is only catchable against the config, out of scope here (disclosed limitation)",
+ "e0_coverage": [
+  {
+   "sota": "address",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 1,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 1,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "address",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "balance",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "lns2",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 1,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "Paris_1_256",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "den520d",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 1,
+   "ok": 23,
+   "fail": 2,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "maze-32-32-4",
+   "N": 158,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "ost003d",
+   "N": 700,
+   "rep": 2,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "random-32-32-20",
+   "N": 280,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 1,
+   "ok": 24,
+   "fail": 1,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "room-32-32-4",
+   "N": 210,
+   "rep": 2,
+   "ok": 23,
+   "fail": 2,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "room-64-64-8",
+   "N": 450,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 1,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  },
+  {
+   "sota": "tackle_alns",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "rep": 2,
+   "ok": 25,
+   "fail": 0,
+   "missing": 0
+  }
+ ],
+ "warnings": [],
+ "load_report": {
+  "dirs": [
+   "results/main",
+   "results/lock"
+  ],
+  "files_seen": 146660,
+  "unreadable": 0,
+  "records_kept": 146660,
+  "benign_ok_duplicates": 0,
+  "superseded_fail_records": 0,
+  "fail_duplicates": 0,
+  "ignored_phases": {}
+ },
+ "iteration_cap_audit": {
+  "cap": 100000000,
+  "n_at_cap": 0,
+  "runs": [],
+  "note": "empty = wall-clock budget always bound first (good); non-empty = iteration cap bound, biasing greedy-vs-layer -> raise MAXITER"
+ }
+}

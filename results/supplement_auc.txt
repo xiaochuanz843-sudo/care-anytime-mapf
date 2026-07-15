@@ -1,0 +1,17 @@
+===AGG_AUC===
+ok runs=2500  with-traj=2500  paired cells=1250
+
+full(CARE) vs stock  (l<0 => CARE smaller => better anytime):
+  incumbent-AUC[0,60]  n=1250  median l=-16.68 (-15.4%)  CARE-better=1161/1250 ( 93%)
+  delay@10s            n=1218  median l=-13.72 (-12.8%)  CARE-better=1054/1218 ( 87%)
+  delay@30s            n=1250  median l=-16.39 (-15.1%)  CARE-better=1122/1250 ( 90%)
+  delay@60s            n=1250  median l=-18.99 (-17.3%)  CARE-better=1159/1250 ( 93%)
+  final delay(=60s)    n=1250  median l=-18.99 (-17.3%)  CARE-better=1159/1250 ( 93%)
+
+incumbent-AUC per host:
+  lns2                 n= 250  median l=-16.59 (-15.3%)  CARE-better= 241/250 ( 96%)
+  balance              n= 250  median l=-16.93 (-15.6%)  CARE-better= 238/250 ( 95%)
+  address              n= 250  median l=-19.72 (-17.9%)  CARE-better= 220/250 ( 88%)
+  tackle               n= 250  median l=-15.37 (-14.3%)  CARE-better= 236/250 ( 94%)
+  tackle_alns          n= 250  median l=-15.20 (-14.1%)  CARE-better= 226/250 ( 90%)
+===AGG_AUC_DONE===

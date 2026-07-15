@@ -1,0 +1,48 @@
+===AGG_SATA===
+ok runs=21975  failed=150  paired cells=4714
+
+HEADLINE  (a vs b; a-shorter% high & median<0 => a >= b on delay):
+  rr5_v5(RRT) vs sa      n= 4087  median l= +0.36 ( +0.4%)  a-shorter= 1889/4087 ( 46%)  sign-p=1.49e-04
+  rr5_v5(RRT) vs ta      n= 4087  median l= +1.12 ( +1.1%)  a-shorter= 1708/4087 ( 42%)  sign-p=0.00e+00
+  full(CARE)  vs sa      n= 4087  median l= +1.77 ( +1.8%)  a-shorter= 1596/4087 ( 39%)  sign-p=0.00e+00
+  full(CARE)  vs ta      n= 4087  median l= +2.31 ( +2.3%)  a-shorter= 1471/4087 ( 36%)  sign-p=0.00e+00
+  full(CARE)  vs rr5_v5  n= 4087  median l= +1.39 ( +1.4%)  a-shorter= 1633/4087 ( 40%)  sign-p=0.00e+00
+  sa          vs ta      n= 4087  median l= +0.70 ( +0.7%)  a-shorter= 1789/4087 ( 44%)  sign-p=4.98e-12
+
+T0/tau0 ROBUSTNESS  (RRT vs tuned SA/TA; RRT-shorter% => not a default-T0 artifact):
+  rr5_v5(RRT) vs sa5     n= 1250  median l= +2.71 ( +2.7%)  a-shorter=  465/1250 ( 37%)  sign-p=0.00e+00
+  rr5_v5(RRT) vs sa50    n= 1250  median l= -2.26 ( -2.2%)  a-shorter=  727/1250 ( 58%)  sign-p=2.81e-10
+  rr5_v5(RRT) vs ta5     n= 1250  median l= +2.25 ( +2.3%)  a-shorter=  478/1250 ( 38%)  sign-p=2.28e-15
+  rr5_v5(RRT) vs ta50    n= 1250  median l= -2.09 ( -2.1%)  a-shorter=  737/1250 ( 59%)  sign-p=8.00e-12
+
+PER-HOST  rr5_v5(RRT) vs sa:
+  lns2                   n=  822  median l= -0.10 ( -0.1%)  a-shorter=  421/822 ( 51%)  sign-p=7.37e-02
+  balance                n=  820  median l= +0.46 ( +0.5%)  a-shorter=  370/820 ( 45%)  sign-p=2.00e-02
+  address                n=  815  median l= +1.03 ( +1.0%)  a-shorter=  374/815 ( 46%)  sign-p=1.04e-02
+  tackle                 n=  815  median l= +0.89 ( +0.9%)  a-shorter=  353/815 ( 43%)  sign-p=6.33e-04
+  tackle_alns            n=  815  median l= +0.38 ( +0.4%)  a-shorter=  371/815 ( 46%)  sign-p=2.57e-02
+
+PER-HOST  rr5_v5(RRT) vs ta:
+  lns2                   n=  822  median l= +0.60 ( +0.6%)  a-shorter=  362/822 ( 44%)  sign-p=4.40e-03
+  balance                n=  820  median l= +1.32 ( +1.3%)  a-shorter=  334/820 ( 41%)  sign-p=9.49e-07
+  address                n=  815  median l= +1.22 ( +1.2%)  a-shorter=  346/815 ( 42%)  sign-p=1.10e-05
+  tackle                 n=  815  median l= +1.67 ( +1.7%)  a-shorter=  315/815 ( 39%)  sign-p=7.61e-10
+  tackle_alns            n=  815  median l= +0.76 ( +0.8%)  a-shorter=  351/815 ( 43%)  sign-p=4.86e-04
+===AGG_ARMPULL===
+arm-pull captured runs=21975
+
+  ALL                      runs=21975  random(arm0)=12.8%  useful(2/3/4)=87.2%  longest(arm1)= 0.0%  median_pulls=2183
+
+by host:
+  lns2                     runs= 4413  random(arm0)=13.6%  useful(2/3/4)=86.4%  longest(arm1)= 0.0%  median_pulls=2272
+  balance                  runs= 4405  random(arm0)=14.0%  useful(2/3/4)=86.0%  longest(arm1)= 0.0%  median_pulls=2505
+  address                  runs= 4386  random(arm0)=12.7%  useful(2/3/4)=87.3%  longest(arm1)= 0.0%  median_pulls=1735
+  tackle                   runs= 4386  random(arm0)=11.6%  useful(2/3/4)=88.4%  longest(arm1)= 0.0%  median_pulls=2008
+  tackle_alns              runs= 4385  random(arm0)=12.4%  useful(2/3/4)=87.6%  longest(arm1)= 0.0%  median_pulls=2273
+
+by arm (acceptance mode; bandit is the same v5 repair under each):
+  full                     runs= 4087  random(arm0)=13.6%  useful(2/3/4)=86.4%  longest(arm1)= 0.0%  median_pulls=2049
+  rr5_v5                   runs= 4712  random(arm0)=13.4%  useful(2/3/4)=86.6%  longest(arm1)= 0.0%  median_pulls=2180
+  sa                       runs= 4087  random(arm0)=12.6%  useful(2/3/4)=87.4%  longest(arm1)= 0.0%  median_pulls=2062
+  ta                       runs= 4089  random(arm0)=12.6%  useful(2/3/4)=87.4%  longest(arm1)= 0.0%  median_pulls=2053
+===AGG_DONE===

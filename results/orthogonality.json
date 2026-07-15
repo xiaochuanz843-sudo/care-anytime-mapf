@@ -1,0 +1,334 @@
+{
+ "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+ "n": 1927,
+ "median": -0.425,
+ "q25": -3.11,
+ "q75": 1.73,
+ "pct_within_pm5": 76.2,
+ "synergy_cells": 164,
+ "subadd_cells": 295,
+ "extremes_pos": [
+  {
+   "phase": "A",
+   "sota": "lns2",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 800,
+   "metric": "delay",
+   "source": "official",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 25,
+   "hl_l": 26.9826,
+   "ci_l": [
+    -11.6575,
+    64.1933
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "grandom-128-s6",
+   "N": 655,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 25.8771,
+   "ci_l": [
+    -12.6551,
+    65.1458
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle_alns",
+   "map": "grandom-128-s0",
+   "N": 737,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 22.4801,
+   "ci_l": [
+    -12.8878,
+    110.9863
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle",
+   "map": "gtiles-Boston_0_256-t2",
+   "N": 130,
+   "metric": "delay",
+   "source": "gen:gtiles",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 20.2733,
+   "ci_l": [
+    4.3506,
+    46.0703
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "balance",
+   "map": "grandom-128-s0",
+   "N": 737,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 19.7011,
+   "ci_l": [
+    4.9646,
+    34.2599
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle_alns",
+   "map": "gware-128-s7",
+   "N": 509,
+   "metric": "delay",
+   "source": "gen:gware",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 18.823,
+   "ci_l": [
+    -4.2113,
+    44.9326
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "gtiles-Paris_1_256-t0",
+   "N": 181,
+   "metric": "delay",
+   "source": "gen:gtiles",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 17.7964,
+   "ci_l": [
+    5.0013,
+    30.3419
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle_alns",
+   "map": "grandom-128-s8",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 16.1475,
+   "ci_l": [
+    -9.3286,
+    72.1917
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "gtiles-Boston_0_256-t4",
+   "N": 458,
+   "metric": "delay",
+   "source": "gen:gtiles",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 15.1161,
+   "ci_l": [
+    1.9842,
+    30.4657
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle",
+   "map": "grandom-128-s10",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": 15.0257,
+   "ci_l": [
+    6.9051,
+    24.726
+   ],
+   "flags": []
+  }
+ ],
+ "extremes_neg": [
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "grandom-128-s5",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -43.8531,
+   "ci_l": [
+    -70.9319,
+    -15.2589
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle",
+   "map": "grandom-128-s5",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -30.5624,
+   "ci_l": [
+    -63.7851,
+    -0.8071
+   ],
+   "flags": []
+  },
+  {
+   "phase": "A",
+   "sota": "balance",
+   "map": "warehouse-20-40-10-2-2",
+   "N": 1000,
+   "metric": "delay",
+   "source": "official",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 25,
+   "hl_l": -26.522,
+   "ci_l": [
+    -55.1378,
+    -1.2831
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "gtiles-Berlin_1_256-t8",
+   "N": 76,
+   "metric": "delay",
+   "source": "gen:gtiles",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -26.515,
+   "ci_l": [
+    -68.0221,
+    2.3828
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "balance",
+   "map": "gtiles-Boston_0_256-t3",
+   "N": 391,
+   "metric": "delay",
+   "source": "gen:gtiles",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -24.6628,
+   "ci_l": [
+    -36.4368,
+    -10.2347
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "tackle_alns",
+   "map": "gware-128-s1",
+   "N": 509,
+   "metric": "delay",
+   "source": "gen:gware",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -24.2685,
+   "ci_l": [
+    -69.1035,
+    3.5703
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "balance",
+   "map": "grandom-128-s5",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -24.0883,
+   "ci_l": [
+    -54.3621,
+    8.9046
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "lns2",
+   "map": "grandom-128-s5",
+   "N": 739,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -23.7185,
+   "ci_l": [
+    -35.498,
+    -4.6546
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "grandom-128-s0",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -22.1736,
+   "ci_l": [
+    -75.9462,
+    2.8399
+   ],
+   "flags": []
+  },
+  {
+   "phase": "G",
+   "sota": "address",
+   "map": "grandom-128-s2",
+   "N": 1000,
+   "metric": "delay",
+   "source": "gen:grandom",
+   "definition": "(l_spsa_only + l_v5_only) - l_full; >0 = synergy, <0 = sub-additive",
+   "n_eff": 8,
+   "hl_l": -21.0112,
+   "ci_l": [
+    -128.5167,
+    -1.4352
+   ],
+   "flags": []
+  }
+ ]
+}

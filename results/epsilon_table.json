@@ -1,0 +1,60 @@
+{
+ "protocol": "eps95 = 95th pct of |lr100| over stock replicate pairs (E0 reps 1,2 + A rep 0, t=60, delay); per regime, global fallback for uncovered regimes",
+ "global": {
+  "eps95_l": 169.9657,
+  "median_l": 12.8713,
+  "n_pairs": 2962
+ },
+ "regimes": {
+  "city": {
+   "eps95_l": 227.4647,
+   "median_l": 71.6029,
+   "n_pairs": 373,
+   "maps": [
+    "Paris_1_256"
+   ]
+  },
+  "dispersed": {
+   "eps95_l": 17.5423,
+   "median_l": 6.0328,
+   "n_pairs": 375,
+   "maps": [
+    "random-32-32-20"
+   ]
+  },
+  "game": {
+   "eps95_l": 62.4819,
+   "median_l": 20.0096,
+   "n_pairs": 735,
+   "maps": [
+    "den520d",
+    "ost003d"
+   ]
+  },
+  "maze": {
+   "eps95_l": 60.4207,
+   "median_l": 12.047,
+   "n_pairs": 364,
+   "maps": [
+    "maze-32-32-4"
+   ]
+  },
+  "room": {
+   "eps95_l": 22.2884,
+   "median_l": 6.7129,
+   "n_pairs": 740,
+   "maps": [
+    "room-32-32-4",
+    "room-64-64-8"
+   ]
+  },
+  "warehouse": {
+   "eps95_l": 349.8257,
+   "median_l": 58.0237,
+   "n_pairs": 375,
+   "maps": [
+    "warehouse-20-40-10-2-2"
+   ]
+  }
+ }
+}
