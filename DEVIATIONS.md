@@ -12,6 +12,7 @@ Convention: ℓ = 100·ln((y_arm+1)/(y_stock+1)) ("log-points", lp); bt = (1−e
 | 3 | **H5 gmaze control** | gmaze (perfect maze) preregistered as a **null control**: "expected effect ≈ 0". | Reported as an **attenuation control**: measured family map-level median is bt ≈ **+1.5%** (ℓ = −1.50 lp; per-host medians −0.4 to −2.1 lp) — strongly attenuated versus the +8–9% official-map effect, but not exactly zero. | Perfect mazes remove alternative paths but not all plateau/ordering slack, so a small residual effect is mechanistically plausible; calling an observed +1.5% "null confirmed" would overstate. | Honest relabeling; the mechanism inference (effect requires path multiplicity; braided mazes restore it) is unchanged and supported by the gmaze→gmazeb contrast. |
 | 4 | **Terminology ("safe-arm")** | Development notes and early drafts called the screened repair-arm portfolio the "safe-arm" set. | All paper-facing text uses "**screened arm set**" (the exclusion of the longest-first ordering was an empirical development-phase screening decision, not a formal safety guarantee). | "Safe" suggests a verified property; the exclusion is evidence-based screening (later corroborated: the excluded ordering is 0W/40L catastrophic in the final-binary bridge experiment). | Wording-only; no analysis change. |
 | 5 | **Timestamp chain** | (Implicit) preregistration document itself timestamped before execution. | `PREREGISTRATION.md` has **no standalone OTS stamp of its own file**. Its freeze evidence is a chain: (a) OpenTimestamps stamps dated **2026-07-04 UTC** covering the development artifacts whose SHA-256 manifest it summarizes (PREREGISTRATION_cucb / FULL_EXPERIMENT_PLAN / SERVER_BATTERY_SPEC / dev LNS.cpp / smoke_accept, in `prereg_timestamp/manifest.json`); (b) battery execution dates 2026-07-10..12 (run-level `finished_at`); (c) repository commit 2026-07-15 (after execution; not usable alone as freeze evidence). This file and `PREREGISTRATION.md` are both OTS-stamped **today** (see record below) to fix the disclosure itself in time. | The 07-04 stamping covered the spec/manifest artifacts rather than the assembled PREREGISTRATION.md file. | The freeze evidence is a documented chain rather than a single stamp; disclosed here in full. The new stamps bound the *disclosure*, they do not retroactively strengthen the *freeze*. |
+| 6 | **Plan-internal ADDRESS `K` value** | Plan text line 12 quotes the ADDRESS invocation with `--k 64` (copied from the upstream README's example command); plan line 71 states "K=32 = the ADDRESS paper default". The two lines are internally inconsistent. | All ADDRESS runs executed with `--k 32` (frozen launch configs, `gen_config_aaai.py`), matching line 71 and the ADDRESS paper default. | Line 12 mistranscribed the upstream README example value at plan-assembly time; the executable specification (line 71 + frozen configs) was unambiguous. | **None on analysis**: execution matches the paper-default specification; no result depends on the line-12 wording. Disclosed for completeness. |
 
 ## Timestamp record
 
@@ -34,3 +35,11 @@ standard `.ots` files on any machine with a working client).
   (which also repeats the hash above), and the file as stamped is byte-identical to
   the committed version whose digest appears there.
   proofs: `timestamps/DEVIATIONS.md.{a,b,alice}.response.bin`
+- **AMENDMENT (2026-07-16, later same day): row 6 (plan-internal ADDRESS K value)
+  was added after the 15:08Z stamp, and the amended file was RE-STAMPED the same
+  day** (exact time and SHA-256 in `timestamps/manifest.json` and
+  `timestamps/TIMESTAMP_RECORD.txt`; the current
+  `timestamps/DEVIATIONS.md.{a,b,alice}.response.bin` proofs cover the amended
+  file). The superseded 15:08Z proofs of the pre-amendment version are archived
+  under `timestamps/superseded_20260716T1508Z/`. Row 6 discloses a plan-internal
+  transcription inconsistency only; no analysis or result changes.

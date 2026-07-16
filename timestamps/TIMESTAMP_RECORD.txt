@@ -11,3 +11,10 @@ DEVIATIONS.md
   sha256: 9ad2dc463f7bad42b6c64d9b0ac787e0458afd78f3754fe33abb742fbe17fe61
   bytes:  5839
   proofs: timestamps/DEVIATIONS.md.{a,b,alice}.response.bin (3/3 calendars ok)
+
+AMENDED DEVIATIONS.md (row 6 added; supersedes the 15:08Z stamp above;
+old proofs archived in superseded_20260716T1508Z/)
+  restamped_utc: 2026-07-16T18:03:07.671173+00:00
+  sha256: de89cbbaa4e4cfc392d93a4fd5d57065e88d62f6c96721aa70670339163fdfd4
+  bytes:  7121
+  proofs: timestamps/DEVIATIONS.md.{a,b,alice}.response.bin (current)

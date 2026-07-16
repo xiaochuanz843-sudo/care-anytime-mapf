@@ -37,6 +37,27 @@
      "response_bytes": 172
     }
    }
+  },
+  "DEVIATIONS.md (amended, supersedes 15:08Z stamp)": {
+   "sha256": "de89cbbaa4e4cfc392d93a4fd5d57065e88d62f6c96721aa70670339163fdfd4",
+   "bytes": 7121,
+   "amended": true,
+   "restamped_utc": "2026-07-16T18:03:07.671173+00:00",
+   "calendars": {
+    "https://a.pool.opentimestamps.org": {
+     "status": "ok",
+     "response_bytes": 172
+    },
+    "https://b.pool.opentimestamps.org": {
+     "status": "ok",
+     "response_bytes": 135
+    },
+    "https://alice.btc.calendar.opentimestamps.org": {
+     "status": "ok",
+     "response_bytes": 242
+    }
+   }
   }
- }
+ },
+ "amendment_note": "DEVIATIONS.md amended (row 6) and re-stamped; original 15:08Z proofs archived under superseded_20260716T1508Z/"
 }
