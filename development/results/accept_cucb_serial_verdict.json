@@ -1,0 +1,63 @@
+{
+  "args": {
+    "mode": "cucb",
+    "map": "maze-32-32-2",
+    "agents": "150",
+    "scens": "1,2,3,4,5,6,7,8,9",
+    "seeds": "1",
+    "times": "30",
+    "workers": 1,
+    "only": "rand,ldel,mixer,cucb,bgse,bgts",
+    "out": "C:\\Users\\23760\\Desktop\\\u96f6\u5f00\u9500\u63a2\u7d22\u63a7\u5236\\results\\accept_cucb_serial_verdict.json"
+  },
+  "summary": {
+    "N150_t30_rand": {
+      "rel%": 0.0,
+      "delay%": 0.0,
+      "win": 0,
+      "n": 9,
+      "p": 1.0,
+      "iters": 4542
+    },
+    "N150_t30_ldel": {
+      "rel%": -12.09,
+      "delay%": -27.9,
+      "win": 9,
+      "n": 9,
+      "p": 0.0077,
+      "iters": 6693
+    },
+    "N150_t30_mixer": {
+      "rel%": -11.44,
+      "delay%": -26.4,
+      "win": 9,
+      "n": 9,
+      "p": 0.0077,
+      "iters": 5775
+    },
+    "N150_t30_cucb": {
+      "rel%": -12.72,
+      "delay%": -29.36,
+      "win": 9,
+      "n": 9,
+      "p": 0.0077,
+      "iters": 6569
+    },
+    "N150_t30_bgse": {
+      "rel%": -12.24,
+      "delay%": -28.25,
+      "win": 9,
+      "n": 9,
+      "p": 0.0077,
+      "iters": 6024
+    },
+    "N150_t30_bgts": {
+      "rel%": -11.97,
+      "delay%": -27.62,
+      "win": 9,
+      "n": 9,
+      "p": 0.0077,
+      "iters": 6329
+    }
+  }
+}

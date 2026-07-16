@@ -1,0 +1,210 @@
+{
+  "args": {
+    "mode": "cucb",
+    "map": "maze-32-32-2",
+    "agents": "150",
+    "scens": "1,2,3",
+    "seeds": "1",
+    "times": "30",
+    "workers": 1,
+    "only": "rand,ldel,bgts,roul",
+    "out": "C:\\Users\\23760\\Desktop\\\u96f6\u5f00\u9500\u63a2\u7d22\u63a7\u5236\\results\\sanity_postfix.json"
+  },
+  "summary": {
+    "N150_t30_rand": {
+      "rel%": 0.0,
+      "delay%": 0.0,
+      "win": 0,
+      "n": 3,
+      "n_eff": 0,
+      "p": 1.0,
+      "iters": 4838
+    },
+    "N150_t30_ldel": {
+      "rel%": -10.8,
+      "delay%": -26.13,
+      "win": 3,
+      "n": 3,
+      "n_eff": 3,
+      "p": 0.25,
+      "iters": 7589
+    },
+    "N150_t30_bgts": {
+      "rel%": -10.34,
+      "delay%": -25.02,
+      "win": 3,
+      "n": 3,
+      "n_eff": 3,
+      "p": 0.25,
+      "iters": 7022
+    },
+    "N150_t30_roul": {
+      "rel%": -11.94,
+      "delay%": -28.89,
+      "win": 3,
+      "n": 3,
+      "n_eff": 3,
+      "p": 0.25,
+      "iters": 7206
+    }
+  },
+  "dropped": {},
+  "raw": [
+    {
+      "N": 150,
+      "scen": 1,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "rand",
+      "soc": 14453,
+      "iters": 4738,
+      "lb": 8358,
+      "best": 14453,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 1,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "ldel",
+      "soc": 12698,
+      "iters": 7368,
+      "lb": 8358,
+      "best": 12698,
+      "diag": "0 0 0 0 7367  (random longest shortest most-delayed least-delayed)",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 1,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "bgts",
+      "soc": 12578,
+      "iters": 7029,
+      "lb": 8358,
+      "best": 12578,
+      "diag": "arm0=1485(mu=0.0181818) arm1=61(mu=0.0327869) arm4=5482(mu=0.144655)  gate_open_iter=100 T=7028 mode=ts locked=0 LOCK=0 gated=1 That=2331 Nid=556 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 1,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "roul",
+      "soc": 12526,
+      "iters": 6985,
+      "lb": 8358,
+      "best": 12526,
+      "diag": "arm0=444(mu=0.0292793) arm1=1531(mu=0.0274331) arm4=5009(mu=0.130365)  gate_open_iter=2 T=6984 mode=breaker locked=0 LOCK=0 gated=0 That=0 Nid=0 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 2,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "rand",
+      "soc": 14045,
+      "iters": 4419,
+      "lb": 8048,
+      "best": 14045,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 2,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "ldel",
+      "soc": 12147,
+      "iters": 6959,
+      "lb": 8048,
+      "best": 12147,
+      "diag": "0 0 0 0 6958  (random longest shortest most-delayed least-delayed)",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 2,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "bgts",
+      "soc": 12491,
+      "iters": 6338,
+      "lb": 8048,
+      "best": 12491,
+      "diag": "arm0=1427(mu=0.0266293) arm1=59(mu=0.0338983) arm4=4851(mu=0.131313)  gate_open_iter=200 T=6337 mode=ts locked=0 LOCK=0 gated=1 That=2544 Nid=498 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 2,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "roul",
+      "soc": 12277,
+      "iters": 6752,
+      "lb": 8048,
+      "best": 12277,
+      "diag": "arm0=331(mu=0.0392749) arm1=1713(mu=0.0420315) arm4=4707(mu=0.139792)  gate_open_iter=1 T=6751 mode=breaker locked=0 LOCK=0 gated=0 That=0 Nid=0 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 3,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "rand",
+      "soc": 13281,
+      "iters": 5357,
+      "lb": 8103,
+      "best": 13281,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 3,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "ldel",
+      "soc": 12422,
+      "iters": 8441,
+      "lb": 8103,
+      "best": 12422,
+      "diag": "0 0 0 0 8440  (random longest shortest most-delayed least-delayed)",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 3,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "bgts",
+      "soc": 12389,
+      "iters": 7698,
+      "lb": 8103,
+      "best": 12389,
+      "diag": "arm0=1699(mu=0.0241318) arm1=98(mu=0.0408163) arm4=5900(mu=0.108136)  gate_open_iter=200 T=7697 mode=ts locked=0 LOCK=0 gated=1 That=2468 Nid=558 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 150,
+      "scen": 3,
+      "seed": 1,
+      "t": 30.0,
+      "arm": "roul",
+      "soc": 11987,
+      "iters": 7880,
+      "lb": 8103,
+      "best": 11987,
+      "diag": "arm0=298(mu=0.0671141) arm1=1152(mu=0.0538194) arm4=6429(mu=0.102815)  gate_open_iter=2 T=7879 mode=breaker locked=0 LOCK=0 gated=0 That=0 Nid=0 elim=000",
+      "status": "ok"
+    }
+  ]
+}

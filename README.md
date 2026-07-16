@@ -54,6 +54,8 @@ setup/             dataset download / build / generated-map pipeline / N-probe
 data/gen_maps/     MANIFEST + generator for the 178 generated maps (the maps themselves are a
                    Release asset / regenerated locally; see "Datasets")
 results/           aggregated per-cell tables underlying our reported results
+development/       pre-preregistration screening: fixed replanning orders, a
+                   no-learning uniform-mixture control, bandit variants (see its README)
 PREREGISTRATION.md frozen experimental design
 LICENSE, NOTICE.md MIT (layer + harness) + third-party attributions
 ```

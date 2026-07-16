@@ -1,0 +1,193 @@
+{
+  "args": {
+    "mode": "cucb",
+    "map": "den312d",
+    "agents": "300",
+    "scens": "1,2,3,4,5,6",
+    "seeds": "1",
+    "times": "60",
+    "workers": 1,
+    "only": "rand,v5",
+    "maxiter": "1000000000",
+    "out": "C:\\Users\\23760\\Desktop\\\u96f6\u5f00\u9500\u63a2\u7d22\u63a7\u5236\\results\\v5val_den312d.json"
+  },
+  "summary": {
+    "N300_t60_rand": {
+      "rel%": 0.0,
+      "delay%": 0.0,
+      "win": 0,
+      "n": 6,
+      "n_eff": 0,
+      "p": 1.0,
+      "iters": 7335
+    },
+    "N300_t60_v5": {
+      "rel%": 0.11,
+      "delay%": 0.97,
+      "win": 2,
+      "n": 6,
+      "n_eff": 6,
+      "p": 0.6875,
+      "iters": 7440
+    }
+  },
+  "dropped": {},
+  "raw": [
+    {
+      "N": 300,
+      "scen": 1,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 18126,
+      "iters": 5788,
+      "lb": 15878,
+      "best": 18126,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 1,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 18008,
+      "iters": 6254,
+      "lb": 15878,
+      "best": 18008,
+      "diag": "arm0=5847(mu=0.049085) arm1=144(mu=0.0138889) arm4=262(mu=0.0267176)  gate_open_iter=600 T=6253 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=3315 Nid=946 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 2,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 19320,
+      "iters": 4433,
+      "lb": 16571,
+      "best": 19320,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 2,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 18634,
+      "iters": 5600,
+      "lb": 16571,
+      "best": 18634,
+      "diag": "arm0=5345(mu=0.0587465) arm1=160(mu=0.025) arm4=94(mu=0.0106383)  gate_open_iter=1100 T=5599 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=2914 Nid=826 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 3,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 16988,
+      "iters": 11626,
+      "lb": 15960,
+      "best": 16988,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 3,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 17252,
+      "iters": 9158,
+      "lb": 15960,
+      "best": 17252,
+      "diag": "arm0=5427(mu=0.0287452) arm1=1453(mu=0.0254646) arm4=2277(mu=0.027668)  gate_open_iter=200 T=9157 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=3708 Nid=1060 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 4,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 18003,
+      "iters": 8328,
+      "lb": 16220,
+      "best": 18003,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 4,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 18015,
+      "iters": 9040,
+      "lb": 16220,
+      "best": 18015,
+      "diag": "arm0=4211(mu=0.0275469) arm1=2385(mu=0.0272537) arm4=2443(mu=0.027016)  gate_open_iter=200 T=9039 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=3650 Nid=888 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 5,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 19827,
+      "iters": 4800,
+      "lb": 16727,
+      "best": 19827,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 5,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 20164,
+      "iters": 4731,
+      "lb": 16727,
+      "best": 20164,
+      "diag": "arm0=3521(mu=0.0528259) arm1=166(mu=0.0240964) arm4=1043(mu=0.0488974)  gate_open_iter=700 T=4730 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=2782 Nid=730 elim=000",
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 6,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "rand",
+      "soc": 17932,
+      "iters": 9036,
+      "lb": 16240,
+      "best": 17932,
+      "diag": null,
+      "status": "ok"
+    },
+    {
+      "N": 300,
+      "scen": 6,
+      "seed": 1,
+      "t": 60.0,
+      "arm": "v5",
+      "soc": 18245,
+      "iters": 9856,
+      "lb": 16240,
+      "best": 18245,
+      "diag": "arm0=4306(mu=0.0197399) arm1=864(mu=0.0138889) arm4=4685(mu=0.0207044)  gate_open_iter=100 T=9855 mode=ts locked=0 LOCK=0 gated=1 dep=-1 That=4737 Nid=842 elim=000",
+      "status": "ok"
+    }
+  ]
+}
