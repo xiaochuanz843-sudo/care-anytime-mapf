@@ -1,0 +1,66 @@
+{
+ "load": {
+  "files_seen": 10000,
+  "unreadable": 0,
+  "records_kept": 10000,
+  "benign_ok_duplicates": 0,
+  "superseded_fail_records": 0
+ },
+ "expected": {
+  "runs": 10000,
+  "cells": 40,
+  "arms": 10,
+  "scens_per_cell": 25
+ },
+ "n_fail": 0,
+ "fail_ledger": [],
+ "bin_md5_per_host": {
+  "address": [
+   "70ba88ef2f560da2fc9e309097ef5f09"
+  ],
+  "balance": [
+   "6b653b3202a49f8a12e203169ddb0cfd"
+  ],
+  "lns2": [
+   "86c930cba907192d83db15802b02abff"
+  ],
+  "tackle": [
+   "2a7ecf01225f93fefbd62eeb73042fdf"
+  ],
+  "tackle_alns": [
+   "2a7ecf01225f93fefbd62eeb73042fdf"
+  ]
+ },
+ "md5_unique_per_host": true,
+ "seed_pairing_violations": [],
+ "cells_seen": 40,
+ "incomplete_arm_slots": {},
+ "wall_s": {
+  "address": {
+   "median": 63.77,
+   "p95": 67.06,
+   "max": 70.49
+  },
+  "balance": {
+   "median": 63.745,
+   "p95": 66.85,
+   "max": 69.77
+  },
+  "lns2": {
+   "median": 64.125,
+   "p95": 67.01,
+   "max": 69.71
+  },
+  "tackle": {
+   "median": 63.96,
+   "p95": 67.24,
+   "max": 70.36
+  },
+  "tackle_alns": {
+   "median": 63.86,
+   "p95": 67.24,
+   "max": 68.84
+  }
+ },
+ "loadavg_pre": null
+}

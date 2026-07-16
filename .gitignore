@@ -1,0 +1,65 @@
+# --- raw battery outputs (per-run JSONs; the AGGREGATED tables in results/*.json ARE tracked) ---
+results/main/
+results/lock/
+results/traj/
+results/traj_drift/
+results/traj_t300/
+results/sata/
+results/auc/
+results/smoke/
+results/smoke_auc/
+results/drift/
+results/t300/
+work/
+analysis/out/
+run_*.log
+run_*.out
+nohup.out
+
+# --- official maps: downloaded via setup/00 (regenerate, don't ship) ---
+data/maps/
+data/scen-random/
+data/_dl/
+
+# --- generated maps: shipped as the gen_maps.zip Release asset OR regenerated via setup/02 ---
+# (the frozen MANIFEST.json + its md5 ARE tracked so regeneration is verifiable)
+data/gen_maps/maps/
+data/gen_maps/scen-random/
+
+# --- build artifacts + binaries ---
+src/*/CMakeCache.txt
+src/*/CMakeFiles/
+src/*/Makefile
+src/*/cmake_install.cmake
+src/lns2/lns
+src/balance/balance
+src/address/address
+src/tackle/tackle
+setup/build.log
+deps/
+
+# --- machine-generated configs (created on machine 1, copied to machine 2) ---
+experiments/configs/
+experiments/gen_n_final.json
+
+# --- python ---
+__pycache__/
+*.pyc
+
+# --- misc ---
+.DS_Store
+*.tgz
+
+# --- non-English docs (not part of the English release) ---
+README_zh.md
+docs/DESIGN_zh.md
+experiments/SUPPLEMENT_runs.md
+
+# --- exploratory scratch not reported in the paper ---
+experiments/gen_drift.py
+experiments/gen_t300.py
+experiments/agg_drift.py
+experiments/agg_t300.py
+
+# --- bridge experiment payload (kept despite the global rules above) ---
+!bridge_analysis/raw/bridge_results.tgz

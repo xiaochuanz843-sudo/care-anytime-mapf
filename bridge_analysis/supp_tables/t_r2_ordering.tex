@@ -1,0 +1,23 @@
+% T-R2: replanning-order policies (same hierarchical convention as T-R1).
+\begin{table}[t]\centering\small
+\caption{Bridge experiment: replanning-order control matrix. Fixed single
+orderings vs.\ the uniform mixture, the mixture vs.\ the Thompson portfolio,
+and the per-cell \emph{oracle} best fixed ordering vs.\ Thompson (the oracle
+picks per cell on the same data --- an optimistic upper bound for any fixed-order
+policy; picks: most-delayed 21, shortest 16, longest 3, least-delayed 0).}
+\label{stab:bridge-ordering}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Contrast & HL $\ell$ & BCa$_{95}$ & bt & W/L & $p$ \\
+\midrule
+\texttt{rr5\_long}$-$\texttt{rr5\_unif} (fixed longest-haul) & $+159.81$ & $[+119.55,\,+235.45]$ & $-394.4\%$ & 0/40 & $3.6\!\times\!10^{-8}$ \\
+\texttt{rr5\_ldel}$-$\texttt{rr5\_unif} (fixed least-delayed) & $+161.66$ & $[+121.40,\,+236.58]$ & $-403.6\%$ & 0/40 & $3.6\!\times\!10^{-8}$ \\
+\texttt{rr5\_short}$-$\texttt{rr5\_unif} (fixed shortest) & $-1.66$ & $[-10.34,\,+6.58]$ & $+1.6\%$ & 19/21 & $0.667$ \\
+\texttt{rr5\_mdel}$-$\texttt{rr5\_unif} (fixed most-delayed) & $-3.98$ & $[-8.19,\,+0.65]$ & $+3.9\%$ & 23/17 & $0.093$ \\
+\texttt{rr5\_unif}$-$\texttt{rr5\_v5} (uniform vs.\ Thompson) & $+5.58$ & $[+2.58,\,+9.88]$ & $-5.7\%$ & 13/27 & $2.1\!\times\!10^{-4}$ \\
+oracle fixed$-$\texttt{rr5\_v5} & $-1.42$ & $[-5.04,\,+0.82]$ & $+1.4\%$ & 22/18 & $0.276$$^{\dagger}$ \\
+\bottomrule
+\end{tabular}
+\par\smallskip\raggedright\footnotesize $^{\dagger}$Selection bias in the
+oracle's favor (per-cell pick uses the evaluation data).
+\end{table}

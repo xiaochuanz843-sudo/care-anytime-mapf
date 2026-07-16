@@ -1,0 +1,25 @@
+% T-R1: bridge attribution chain (hierarchical over 40 cells; stats core identical
+% to the main battery: HL pseudomedian, BCa 9999, Wilcoxon zero_method=pratt).
+\begin{table}[t]\centering\small
+\caption{Final-binary bridge experiment: attribution chain. Each row summarizes
+the 40 $(\text{host},\text{map},N)$ cells; per cell the effect is the
+scenario-paired ($n{=}25$, shared seeds) Hodges--Lehmann log-ratio
+$\ell=100\ln\!\frac{y_a+1}{y_b+1}$ on delay ($\ell<0$: first arm better).
+Row entries: HL over cell effects, BCa$_{95}$ over cells, back-transform
+$\mathrm{bt}=(1-e^{\ell/100})\cdot100\%$, cells improved/worsened, two-sided
+Wilcoxon (Pratt) over cells. On the plain median-of-cells scale the chain is
+near-additive: $-11.12-1.00-9.27+0.14=-21.25$ vs.\ measured $-21.43$ (the table
+columns report the HL pseudomedian over cells, which is not exactly additive).}
+\label{stab:bridge-attribution}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Contrast & HL $\ell$ & BCa$_{95}$ & bt & W/L & $p$ \\
+\midrule
+\texttt{gce0}$-$\texttt{stock} (early-break/tie channel) & $-12.67$ & $[-15.31,\,-10.73]$ & $+11.9\%$ & 39/1 & $4.8\!\times\!10^{-8}$ \\
+\texttt{rr5}$-$\texttt{gce0} (return band $\delta{=}5$) & $+0.29$ & $[-2.06,\,+2.49]$ & $-0.3\%$ & 23/17 & $0.717$ \\
+\texttt{rr5\_v5}$-$\texttt{rr5} (repair portfolio) & $-11.37$ & $[-17.75,\,-6.33]$ & $+10.7\%$ & 27/13 & $7.8\!\times\!10^{-5}$ \\
+\texttt{full}$-$\texttt{rr5\_v5} (learned band) & $-0.39$ & $[-1.87,\,+0.94]$ & $+0.4\%$ & 19/21 & $0.628$ \\
+\texttt{full}$-$\texttt{stock} (total) & $-27.13$ & $[-33.56,\,-19.26]$ & $+23.8\%$ & 40/0 & $3.6\!\times\!10^{-8}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

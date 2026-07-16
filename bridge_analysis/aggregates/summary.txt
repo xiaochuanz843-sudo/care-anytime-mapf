@@ -1,0 +1,18 @@
+bridge runs kept=10000 files=10000 fail=0 md5_unique=True seed_violations=0 incomplete_slots=0
+C1_earlybreak_channel        med_hl=  -11.12 lp (bt +10.52%)  cells 39W/1L/0T  p_binom=0.0
+C2_acceptance_rule           med_hl=   -1.00 lp (bt  +0.99%)  cells 23W/17L/0T  p_binom=0.4296
+C2b_acceptance_vs_stock      med_hl=  -12.34 lp (bt +11.61%)  cells 38W/2L/0T  p_binom=0.0
+C3_long_vs_unif              med_hl= +124.13 lp (bt -246.01%)  cells 0W/40L/0T  p_binom=0.0
+C3_short_vs_unif             med_hl=   +5.12 lp (bt  -5.26%)  cells 19W/21L/0T  p_binom=0.8746
+C3_mdel_vs_unif              med_hl=   -1.08 lp (bt  +1.07%)  cells 23W/17L/0T  p_binom=0.4296
+C3_ldel_vs_unif              med_hl= +126.15 lp (bt -253.08%)  cells 0W/40L/0T  p_binom=0.0
+C3_unif_vs_v5                med_hl=   +4.48 lp (bt  -4.59%)  cells 13W/27L/0T  p_binom=0.0385
+C3_long_vs_v5                med_hl= +142.90 lp (bt -317.46%)  cells 0W/40L/0T  p_binom=0.0
+C3_short_vs_v5               med_hl=   +6.16 lp (bt  -6.35%)  cells 14W/26L/0T  p_binom=0.0807
+C3_mdel_vs_v5                med_hl=   +2.00 lp (bt  -2.02%)  cells 13W/27L/0T  p_binom=0.0385
+C3_ldel_vs_v5                med_hl= +144.55 lp (bt -324.42%)  cells 0W/40L/0T  p_binom=0.0
+C3_v5_gain_on_rr5            med_hl=   -9.27 lp (bt  +8.86%)  cells 27W/13L/0T  p_binom=0.0385
+C4_learned_band              med_hl=   +0.14 lp (bt  -0.14%)  cells 19W/21L/0T  p_binom=0.8746
+H_full_vs_stock              med_hl=  -21.43 lp (bt +19.29%)  cells 40W/0L/0T  p_binom=0.0
+H_rr5v5_vs_stock             med_hl=  -21.13 lp (bt +19.05%)  cells 40W/0L/0T  p_binom=0.0
+C3_oracle_fixed_vs_v5        med_hl=   -0.44 lp (bt  +0.44%)  cells 22W/18L  picks={'rr5_long': 3, 'rr5_short': 16, 'rr5_mdel': 21, 'rr5_ldel': 0}
