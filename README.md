@@ -2,8 +2,8 @@
 
 Research code and data for CARE, a small, environment-gated **acceptance + repair layer** added
 to five generations of MAPF-LNS solvers, leaving the destroy operator unchanged and using no
-per-instance tuning. We evaluate it with within-instance pairing, a preregistered non-inferiority
-("do-no-harm") protocol calibrated to the measured solver-noise floor, an anytime (t=300 s)
+per-instance tuning. We evaluate it with within-instance pairing, a preregistered per-cell 3% non-inferiority
+protocol (the solver-noise floor is measured separately as a diagnostic), an anytime (t=300 s)
 study, and a zero-shot generalization suite on 178 procedurally generated maps (a preregistered
 study of 146,660 runs).
 
@@ -36,8 +36,9 @@ enabled by the runner for all arms symmetrically.
 - **Accept** (`<PFX>ACCEPT`): `spsa` (state-conditioned record-to-record threshold, online
   sign-SPSA-tuned), `rr` (fixed threshold δ), `cart` (budget-decayed threshold), `sa`/`ta`
   (textbook simulated-annealing / threshold-accepting baselines). All anchored on the best
-  incumbent, all with a universal best-return that makes non-greedy acceptance anytime-safe.
-- **Repair** (`<PFX>REPAIR`): `v5` (Thompson-sampling safe-arm replan-priority bandit), `20`
+  incumbent, all with a universal best-return: the returned solution is never worse than the
+  run's own feasible initialization, whatever the acceptance rule.
+- **Repair** (`<PFX>REPAIR`): `v5` (Thompson-sampling screened-arm replan-priority bandit), `20`
   (ε-greedy variant).
 - **Confirmatory arm (preregistered, exactly one):** `full` = `ACCEPT=spsa REPAIR=v5` (= CARE).
   Everything else (`spsa_only`, `v5_only`, `rr5_v5`, `spsa_20`, `cart_v5`, `rr5_20`, `rr20_v5`,
@@ -114,7 +115,7 @@ anytime trajectories) → **G** (generated maps). A single-machine mode is avail
 
 Per-run JSON in `results/` (metrics + arm env + binary md5 + telemetry), aggregated by
 `analysis/aggregate_aaai.py` into per-cell effects with BCa 95% CIs, per-host exact binomials, a
-do-no-harm ledger against the measured per-regime noise floor, the fused ablation extraction,
+non-inferiority ledger (3% per-cell margin; per-regime noise floor as diagnostic), the fused ablation extraction,
 anytime Δ(t) tables, and generated-map per-family ECDFs. The aggregated tables underlying our
 reported results are provided under [`results/`](results/) with a per-file guide in
 [`results/README.md`](results/README.md).
