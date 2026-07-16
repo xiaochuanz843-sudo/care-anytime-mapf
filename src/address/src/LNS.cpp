@@ -29,17 +29,17 @@ static long   g_sp_isi      = 0;              // iterations since last global-be
 static std::vector<Path> g_sp_best_paths;
 static std::vector<Path> g_bestret_paths;     // BESTRET_PORT: UNIVERSAL best-incumbent snapshot (ALL accept arms), restored at end of run()     // best-incumbent path snapshot (spsa best-return)
 
-// ---- AD_REPAIR_PORT: file-static repair-order-bandit state (safe-arm-set delayed replan-priority bandit) ----
+// ---- AD_REPAIR_PORT: file-static repair-order-bandit state (screened-arm-set delayed replan-priority bandit) ----
 // eps-greedy-EMA over 5 fixed PP replan-priority rules (AD_REPAIR=20; unset/0 = stock random_shuffle).
 // Arms: 0=random(stock) 1=longest-haul 2=shortest 3=most-delayed 4=least-delayed.
-// DEFAULT arm set "0,2,3,4" EXCLUDES arm 1 (catastrophic on our fork); override with AD_RB_ARMS.
+// DEFAULT arm set "0,2,3,4" EXCLUDES arm 1 (empirically adverse in the development configuration); override with AD_RB_ARMS.
 static double g_rb2_val[5] = {0,0,0,0,0};   // per-arm EMA of the slack-fraction reward
 static int    g_rb2_n[5]   = {0,0,0,0,0};   // per-arm pull counts
 static int    g_rb2_last   = -1;            // arm pulled for the in-flight neighborhood (-1 = none)
 static double g_rb2_lb     = 0.0;           // free-flow SoC lower bound of the in-flight neighborhood
 static double g_rb2_eps    = 0.15;          // AD_RB_EPS
 static double g_rb2_alpha  = 0.2;           // AD_RB_ALPHA
-static bool   g_rb2_allow[5] = {true,false,true,true,true};   // default AD_RB_ARMS="0,2,3,4" (safe arm set)
+static bool   g_rb2_allow[5] = {true,false,true,true,true};   // default AD_RB_ARMS="0,2,3,4" (screened arm set)
 static bool   g_rb2_cfged  = false;
 static void rb2_cfg()
 {
@@ -51,7 +51,7 @@ static void rb2_cfg()
         std::string v = s; size_t p = 0;
         while (p < v.size()) { size_t q = v.find(',', p); if (q == std::string::npos) q = v.size();
             int a = atoi(v.substr(p, q - p).c_str()); if (a >= 0 && a < 5) g_rb2_allow[a] = true; p = q + 1; }
-        if (!g_rb2_allow[0] && !g_rb2_allow[1] && !g_rb2_allow[2] && !g_rb2_allow[3] && !g_rb2_allow[4]) {   // ANCHORFIX_PORT: empty arm set => UB in explore branch; restore default safe set
+        if (!g_rb2_allow[0] && !g_rb2_allow[1] && !g_rb2_allow[2] && !g_rb2_allow[3] && !g_rb2_allow[4]) {   // ANCHORFIX_PORT: empty arm set => UB in explore branch; restore default screened set
             g_rb2_allow[0] = g_rb2_allow[2] = g_rb2_allow[3] = g_rb2_allow[4] = true;
             fprintf(stderr, "[layer] WARN empty RB_ARMS, fallback to 0,2,3,4\n"); } }
 }

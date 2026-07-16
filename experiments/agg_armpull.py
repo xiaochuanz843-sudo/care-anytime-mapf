@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Aggregate Exp2 (bandit arm-pull frequency). Reads metrics.repair_arms=[n0..n4] captured from
 the REPAIR_ARMS stdout line of every REPAIR=v5 run.
- arms: 0=random(anchor) 1=longest-haul(EXCLUDED from safe set) 2=shortest 3=most-delayed 4=least-delayed
+ arms: 0=random(anchor) 1=longest-haul(EXCLUDED from screened set) 2=shortest 3=most-delayed 4=least-delayed
 Reports the per-run-normalised pull share the bandit sends to the random anchor (arm 0) vs the
 three delay/haul-ordered arms (2,3,4), overall and per host, so v5 is shown NOT equivalent to a
 fixed rule that merely drops the harmful longest-haul arm.

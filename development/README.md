@@ -42,7 +42,7 @@ the (scenario, seed) differences, `win`/`n` are paired win counts.
 
 - **No single fixed ordering is safe across maps** (`accept_cucb_*.json`,
   6 maps; `heldout_*.json`, 5 more): `ldel` is the best rule on maze-32-32-2
-  (−31.5% delay vs. `rand`) but catastrophic on warehouse-10-20-10-2-1 (+77.7%),
+  (−31.5% delay vs. `rand`) but strongly adverse on warehouse-10-20-10-2-1 (+77.7%),
   maze-128-128-10 (+46.5%), and held-out Paris_1_256 (+1403%); `long` is
   harmful on most maps (+80.9% warehouse, +39.2% maze-128) and best on none —
   this is the arm excluded from the shipped screened set.

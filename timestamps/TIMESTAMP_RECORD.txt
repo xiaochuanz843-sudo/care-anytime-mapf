@@ -1,0 +1,13 @@
+TIMESTAMP RECORD (sidecar; avoids self-reference in DEVIATIONS.md)
+stamped_utc: 2026-07-16T15:06:37.090392+00:00
+calendars: https://a.pool.opentimestamps.org, https://b.pool.opentimestamps.org, https://alice.btc.calendar.opentimestamps.org
+
+PREREGISTRATION.md
+  sha256: 083b4821c32decf11bb7602e6d6bab19e8c28ce74fd310d5c06cbefe316cbf0f
+  bytes:  5439
+  proofs: timestamps/PREREGISTRATION.md.{a,b,alice}.response.bin (3/3 calendars ok)
+
+DEVIATIONS.md
+  sha256: 9ad2dc463f7bad42b6c64d9b0ac787e0458afd78f3754fe33abb742fbe17fe61
+  bytes:  5839
+  proofs: timestamps/DEVIATIONS.md.{a,b,alice}.response.bin (3/3 calendars ok)

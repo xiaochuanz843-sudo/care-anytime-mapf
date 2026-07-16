@@ -26,17 +26,17 @@ static long   g_sp_isi      = 0;              // iterations since last global-be
 static std::vector<Path> g_sp_best_paths;
 static std::vector<Path> g_bestret_paths;     // BESTRET_PORT: UNIVERSAL best-incumbent snapshot (ALL accept arms), restored at end of run()     // best-incumbent path snapshot (spsa best-return)
 
-// ---- TK_REPAIR_PORT: file-static repair-order-bandit state (safe-arm-set delayed replan-priority bandit) ----
+// ---- TK_REPAIR_PORT: file-static repair-order-bandit state (screened-arm-set delayed replan-priority bandit) ----
 // eps-greedy-EMA over 5 fixed PP replan-priority rules (TK_REPAIR=20; unset/0 = stock random_shuffle).
 // Arms: 0=random(stock) 1=longest-haul 2=shortest 3=most-delayed 4=least-delayed.
-// DEFAULT arm set "0,2,3,4" EXCLUDES arm 1 (catastrophic on our fork); override with TK_RB_ARMS.
+// DEFAULT arm set "0,2,3,4" EXCLUDES arm 1 (empirically adverse in the development configuration); override with TK_RB_ARMS.
 static double g_rb2_val[5] = {0,0,0,0,0};   // per-arm EMA of the slack-fraction reward
 static int    g_rb2_n[5]   = {0,0,0,0,0};   // per-arm pull counts
 static int    g_rb2_last   = -1;            // arm pulled for the in-flight neighborhood (-1 = none)
 static double g_rb2_lb     = 0.0;           // free-flow SoC lower bound of the in-flight neighborhood
 static double g_rb2_eps    = 0.15;          // TK_RB_EPS
 static double g_rb2_alpha  = 0.2;           // TK_RB_ALPHA
-static bool   g_rb2_allow[5] = {true,false,true,true,true};   // default TK_RB_ARMS="0,2,3,4" (safe arm set)
+static bool   g_rb2_allow[5] = {true,false,true,true,true};   // default TK_RB_ARMS="0,2,3,4" (screened arm set)
 static bool   g_rb2_cfged  = false;
 static void rb2_cfg()
 {
